@@ -48,12 +48,12 @@ function App() {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [history]);
 
-  // Auto-show portfolio effect
+
   useEffect(() => {
     let portfolioInterval;
     
     if (autoShowPortfolio && resumeData) {
-      // Initial delay before starting the auto-showcase
+      
       const initialDelay = setTimeout(() => {
         setShowTechProfile(true);
         
